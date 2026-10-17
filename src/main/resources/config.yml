@@ -1,0 +1,74 @@
+# ========================================================
+#            ESDuels v1.0 - Main Configuration
+#       Lightweight DonutSMP-Style Minecraft Duels
+# ========================================================
+
+# Duration of the post-duel loot collection timer in seconds
+# During this period, the winner stays inside the arena to collect drops
+loot-timer-seconds: 60
+
+# Expiration time for direct duel challenges (/duel send <player>) in seconds
+request-expiration-seconds: 60
+
+# Countdown duration inside the arena before combat begins (seconds)
+countdown-seconds: 5
+
+# Matchmaking queue configuration
+queue:
+  # Interval in ticks between queue GUI refresh (20 ticks = 1 second)
+  refresh-interval-ticks: 20
+  # Simulated or default matchmaking region displayed on the feather in the GUI
+  region-name: "NA East"
+  # Default estimated wait time text when queue is small
+  default-estimated-wait: "15s"
+
+# Queue Waiting Music (Native Minecraft music discs/tracks)
+# Music is randomly picked on queue join and stops immediately upon match or leave
+queue-music:
+  enabled: true
+  volume: 1.0
+  pitch: 1.0
+  tracks:
+    - "MUSIC_DISC_CAT"
+    - "MUSIC_DISC_WAIT"
+    - "MUSIC_DISC_STRAD"
+    - "MUSIC_DISC_CHIRP"
+    - "MUSIC_DISC_MELLOHI"
+    - "MUSIC_DISC_FAR"
+
+# Post-Duel Loot Period Music (Plays for the winner during the 60s loot timer)
+loot-music:
+  enabled: true
+  volume: 1.0
+  pitch: 1.0
+  tracks:
+    - "MUSIC_DISC_PIGSTEP"
+    - "MUSIC_DISC_OTHERSIDE"
+    - "MUSIC_DISC_RELIC"
+
+# Arena Restoration Engine Settings
+# Controls bounded main-thread block restorations
+restoration:
+  # Number of blocks restored per tick on the server thread
+  batch-size: 250
+  # Log progress to console
+  log-restoration: true
+
+# DonutSMP-inspired Queue Confirm GUI customization
+gui:
+  title: "QUEUE CONFIRM"
+  filler-material: "BLACK_STAINED_GLASS_PANE"
+  cancel-material: "RED_STAINED_GLASS_PANE"
+  join-material: "LIME_STAINED_GLASS_PANE"
+  status-material: "COMPASS"
+  stats-material: "GRAY_DYE"
+  region-material: "FEATHER"
+
+# Sound Effects for Duels Lifecycle
+sounds:
+  match-found: "ENTITY_PLAYER_LEVELUP"
+  countdown-tick: "BLOCK_NOTE_BLOCK_PLING"
+  duel-start: "ENTITY_ENDER_DRAGON_GROWL"
+  winner-fanfare: "UI_TOAST_CHALLENGE_COMPLETE"
+  loot-timer-warning: "BLOCK_NOTE_BLOCK_BELL"
+  click: "UI_BUTTON_CLICK"

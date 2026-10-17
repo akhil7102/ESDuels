@@ -1,0 +1,73 @@
+# ========================================================
+#            ESDuels v1.0 - Messages Configuration
+# ========================================================
+
+prefix: "&#33A2FF&lE&#29ACFF&lS&#1EB6FF&lD&#14BFFF&lu&#0AC9FF&le&#00D3FF&ll&#00E5FF&ls&r &8▶ "
+
+general:
+  no-permission: "{PREFIX}&cYou do not have permission to execute this command."
+  player-only: "{PREFIX}&cThis command can only be executed by players."
+  player-not-found: "{PREFIX}&cPlayer &e{PLAYER} &cnot found or is offline."
+  reload-success: "{PREFIX}&aConfigurations and arenas reloaded successfully!"
+
+queue:
+  joined: "{PREFIX}&aYou joined the duels queue! Searching for an opponent..."
+  left: "{PREFIX}&eYou left the duels queue."
+  already-queued: "{PREFIX}&cYou are already in the matchmaking queue!"
+  not-queued: "{PREFIX}&cYou are not in the matchmaking queue."
+  no-arena-available: "{PREFIX}&eNo duel arenas are currently available. You remain queued until one frees up."
+
+challenge:
+  cannot-challenge-self: "{PREFIX}&cYou cannot challenge yourself to a duel!"
+  sender-in-duel: "{PREFIX}&cYou cannot send challenges while in a duel."
+  sender-in-queue: "{PREFIX}&cPlease leave the queue before sending direct challenges."
+  target-in-duel: "{PREFIX}&c{TARGET} is already in a duel."
+  target-in-queue: "{PREFIX}&c{TARGET} is currently in the matchmaking queue."
+  sent: "{PREFIX}&aDuel request sent to &e{TARGET}&a. Expires in &e{EXPIRES}s&a."
+  received: "{PREFIX}&e{SENDER} &ahas challenged you to a duel! &7Type &b/duel accept {SENDER} &7or &c/duel deny {SENDER}&7. Expires in &e{EXPIRES}s&7."
+  accepted: "{PREFIX}&aDuel challenge from &e{SENDER} &aaccepted! Preparing arena..."
+  declined-sender: "{PREFIX}&e{TARGET} &cdeclined your duel request."
+  declined-target: "{PREFIX}&7You declined the duel request from &e{SENDER}&7."
+  expired: "{PREFIX}&7Duel challenge from &e{SENDER} &7has expired."
+  no-request: "{PREFIX}&cYou have no pending duel request from &e{PLAYER}&c."
+
+duel:
+  match-found: "{PREFIX}&aOpponent found: &e{OPPONENT}&a! Teleporting to arena..."
+  countdown-title: "&e&l{COUNT}"
+  countdown-subtitle: "&7Duel starts in &e{COUNT} &7seconds..."
+  start-title: "&#33A2FF&lFIGHT!"
+  start-subtitle: "&7May the best warrior win!"
+  victory-title: "&#00FF66&lVICTORY!"
+  victory-subtitle: "&aYou defeated &e{LOSER}&a!"
+  defeat-title: "&#FF3333&lDEFEAT!"
+  defeat-subtitle: "&cYou were defeated by &e{WINNER}&c!"
+  broadcast-victory: "{PREFIX}&e{WINNER} &7defeated &e{LOSER} &7in a duel!"
+  forfeit: "{PREFIX}&c{PLAYER} has forfeited the duel!"
+  leave-duel: "{PREFIX}&cYou left the duel and surrendered your items to the winner."
+  combat-logged: "{PREFIX}&cYou disconnected during an active duel and died! Your loot was dropped in the arena."
+  draw: "{PREFIX}&eThe duel ended in a draw! Both warriors fell in battle."
+
+loot:
+  actionbar: "&6&lLoot Timer: &e{TIME}s &7| &fCollect drops before returning to spawn!"
+  bossbar: "&6&lLoot Collection &8- &e{TIME}s remaining"
+  ended: "{PREFIX}&aLoot period finished! Teleported to spawn."
+  loser-teleported: "{PREFIX}&cYou were defeated and sent to spawn. Better luck next time!"
+
+spawn:
+  set: "{PREFIX}&aMain duels spawn location set successfully at your current position!"
+  not-set: "{PREFIX}&cMain duels spawn has not been set yet! Admins use &e/duels setspawn&c."
+  teleport: "{PREFIX}&7Teleported to duels spawn."
+
+arena:
+  created: "{PREFIX}&aArena &e{ARENA} &acreated! Set &epos1&a, &epos2&a, &ecorner1&a, &ecorner2&a, then &esave&a."
+  exists: "{PREFIX}&cArena &e{ARENA} &calready exists."
+  not-found: "{PREFIX}&cArena &e{ARENA} &cnot found."
+  pos1-set: "{PREFIX}&aPlayer 1 spawn for arena &e{ARENA} &aset to your location."
+  pos2-set: "{PREFIX}&aPlayer 2 spawn for arena &e{ARENA} &aset to your location."
+  corner1-set: "{PREFIX}&aCorner 1 for arena &e{ARENA} &aset to your location."
+  corner2-set: "{PREFIX}&aCorner 2 for arena &e{ARENA} &aset to your location."
+  saved: "{PREFIX}&aArena &e{ARENA} &asaved! Snapshot persisted asynchronously to disk. Arena is now active!"
+  save-failed: "{PREFIX}&cFailed to save arena snapshot: {ERROR}"
+  incomplete: "{PREFIX}&cArena &e{ARENA} &cis incomplete! Missing: &e{REASON}&c."
+  restoring: "{PREFIX}&7Arena &e{ARENA} &7is currently regenerating blocks..."
+  deleted: "{PREFIX}&cArena &e{ARENA} &chas been deleted."

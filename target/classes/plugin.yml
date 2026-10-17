@@ -1,0 +1,25 @@
+name: ESDuels
+version: '1.0'
+main: fun.endcore.esduels.ESDuels
+api-version: '1.21'
+author: AKHILPLAYZYT
+description: Lightweight, DonutSMP-style duels plugin with inventory preservation and reliable arena restoration.
+softdepend: [PlaceholderAPI]
+
+commands:
+  duel:
+    description: Open the duels matchmaking menu or send a duel challenge
+    aliases: [duels]
+    permission: esduels.use
+    usage: /duel [send <player>|accept <player>|deny <player>|leave]
+
+permissions:
+  esduels.use:
+    description: Allows players to open the duel menu, queue, challenge, accept, and leave
+    default: true
+  esduels.admin:
+    description: Full administrative access to duels system and configurations
+    default: op
+  esduels.arena:
+    description: Allows creating, setting, and saving duels arenas
+    default: op

@@ -1,0 +1,11 @@
+fun\endcore\esduels\DuelRequestTest.class
+fun\endcore\esduels\ArenaTest.class
+fun\endcore\esduels\MessageUtilTest.class
+fun\endcore\esduels\music\MusicManagerTest.class
+fun\endcore\esduels\PlayerStatsTest.class
+fun\endcore\esduels\ConfigValidationTest.class
+fun\endcore\esduels\music\MusicManagerTest$PlaySoundCall.class
+fun\endcore\esduels\music\MusicManagerTest$FakePlayerHandler.class
+fun\endcore\esduels\ColorUtilTest.class
+fun\endcore\esduels\CombatLogTest.class
+fun\endcore\esduels\music\MusicManagerTest$StopSoundCall.class

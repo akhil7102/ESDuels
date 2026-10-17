@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: fun.endcore.esduels.music.MusicManagerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 s -- in fun.endcore.esduels.music.MusicManagerTest
